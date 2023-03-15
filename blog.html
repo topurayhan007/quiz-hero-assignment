@@ -151,6 +151,46 @@
             </p>
           </div>
         </div>
+
+        <!-- -------------------------Question 3------------------------------ -->
+
+        <div class="mx-3 my-8 py-3 px-4 shadow-sm rounded border">
+          <div class="flex items-center">
+            <div
+              class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3"
+            >
+              3
+            </div>
+            <p class="text-gray-800 text-lg">
+              What is <code>'event loop'</code>?
+            </p>
+          </div>
+          <hr class="my-3" />
+          <div class="flex items-center">
+            <p class="mx-11 text-start leading-loose">
+              As we know JavaScript is a single threaded language. But the
+              language has some mechanism to run asynchronous code in parallel
+              in a non blocking manner with the help of
+              <code class="bg-green-50 p-1 rounded font-bold">
+                'Event Loop'.
+              </code>
+              The code in JavaScript are executed line by line, the functions
+              are sent to the Call Stack for execution. Whenever a asynchronous
+              function is detected, it is then sent from the Call Stack to the
+              corresponding Web APIs to run asynchronously without blocking
+              other funtions' execution. After the processing of the
+              asynchronous function is done it is forwarded to the Event Queue
+              where the
+              <code class="bg-green-50 p-1 rounded font-bold">
+                Event Loop
+              </code>
+              constantly looks if there's any function ready for execution, upon
+              detection the function is then pushed to the Call Stack to
+              complete its execution.
+            </p>
+          </div>
+        </div>
+
         <!-- Question and Answer Cards end -->
       </section>
     </main>
