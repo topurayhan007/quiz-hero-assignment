@@ -245,6 +245,57 @@
           </div>
         </div>
 
+        <!-- -------------------------Question 5------------------------------ -->
+
+        <div class="mx-3 my-8 py-3 px-4 shadow-sm rounded border">
+          <div class="flex items-center">
+            <div
+              class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3"
+            >
+              5
+            </div>
+            <p class="text-gray-800 text-lg">
+              What does <code>'chooseQuiz()'</code> function do?
+            </p>
+          </div>
+          <hr class="my-3" />
+          <div class="flex items-center">
+            <p class="mx-11 text-start leading-loose">
+              Each questions has 4 options and each options has an onclick
+              function
+              <code class="bg-green-50 p-1 rounded font-bold"
+                >'chooseQuiz()'</code
+              >
+              with it which passes the index and value of the index. The
+              function
+              <code class="bg-green-50 p-1 rounded font-bold"
+                >'chooseQuiz()'</code
+              >
+              first checks whether the passed parameter answer is already in the
+              <code class="bg-green-50 p-1 rounded font-bold">"answers"</code>
+              array or not using
+              <code class="bg-green-50 p-1 rounded font-bold">'find()'</code>.
+              If the answer to the question already exists then it uses a loop
+              to find the index where the answer is and updates using the
+              <code class="bg-green-50 p-1 rounded font-bold">'splice()'</code>
+              method with the
+              <code class="bg-green-50 p-1 rounded font-bold"
+                >"givenAnswer"</code
+              >
+              value. If there is no answer exists for the question then the
+              function simply pushes the answer to the
+              <code class="bg-green-50 p-1 rounded font-bold">"answers"</code>
+              array. Then it calls the
+              <code class="bg-green-50 p-1 rounded font-bold"
+                >'displayAnswers()'</code
+              >
+              and passes the updated
+              <code class="bg-green-50 p-1 rounded font-bold">"answers"</code>
+              array inside it.
+            </p>
+          </div>
+        </div>
+
         <!-- Question and Answer Cards end -->
       </section>
     </main>
