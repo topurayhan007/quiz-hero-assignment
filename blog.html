@@ -45,12 +45,73 @@
         </div>
         <button
           class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+          id="quiz-btn"
         >
           Quiz
         </button>
       </nav>
     </header>
     <!-- Header/Navbar section end -->
+
+    <main>
+      <section
+        class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center"
+        id="quesAnsContainer"
+      >
+        <h1 class="text-center my-8 text-2xl font-medium">
+          Questions and Answers
+        </h1>
+
+        <!-- Question and Answer Cards start -->
+
+        <!-- -------------------------Question 1------------------------------ -->
+        <div class="mx-3 my-8 py-3 px-4 shadow-sm rounded border">
+          <div class="flex items-center">
+            <div
+              class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3"
+            >
+              1
+            </div>
+            <p class="text-gray-800 text-lg">
+              What is the difference between <code>'map'</code>,
+              <code>'filter'</code>, <code>'find'</code>, and
+              <code>'forEach'</code>?
+            </p>
+          </div>
+          <hr class="my-3" />
+          <div class="flex items-center">
+            <p class="mx-11 text-start">
+              The difference is: the
+              <code class="bg-green-50 p-1 rounded font-bold">'map()'</code>
+              method will do some functions that you specified over an array
+              elements and will return a new array as it's return containing the
+              modified elements.
+              <br />
+              <br />
+              Whereas, the
+              <code class="bg-green-50 p-1 rounded font-bold">'filter()'</code>
+              method will return an array of elements which only has met the
+              condition specified inside it.
+              <br />
+              <br />
+              Similary,
+              <code class="bg-green-50 p-1 rounded font-bold">'find()'</code>
+              method will return only one element which has first met the
+              specified condition.
+              <br />
+              <br />
+              However,
+              <code class="bg-green-50 p-1 rounded font-bold">'forEach()'</code>
+              method will do certain functions on each of the elements that you
+              specified without changing the original array itself.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question and Answer Cards end -->
+      </section>
+    </main>
+
     <!-- Footer section start -->
     <footer class="py-10 text-center text-sm">
       Copyright © 2023 Quiz Hero All Rights Reserved.
